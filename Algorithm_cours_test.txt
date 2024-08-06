@@ -1,0 +1,233 @@
+Algorithm :
+//genere un ordre de mot (phrase)
+variables :
+belle, marquise, vos, beaux, yeux, me, font, mourir, d'amour " ": CAR; 
+Debut :
+"belle"← saisie();
+"marquise"← saisie();
+"vos"← saisie();
+"beaux"← saisie();
+"yeux"← saisie();
+"me"← saisie();
+"font"← saisie();
+" "← saisie();
+Ecrire(CAR & " " & CAR & " " & CAR); //afficher les mots dans un ordre *4
+Text1 : belle marquise vos beaux yeux me font mourir d'amour
+Text2 : marquise belle vos yeux beaux me font d'amour mourir
+Text3 : vos beaux yeux belle marquise me font mourir d'amour    
+Text4 : mourir d'amour belle marquise vos beaux yeux me font
+Fin
+
+Algorithm texte mélangé
+variables : 
+chaine1, chaine2, chaine3, chaine4;
+Début :
+chaine1 ← saisie();
+chaine2 ← saisie();
+chaine3 ← saisie();
+chaine4 ← saisie();
+Ecrire(chaine1 & chaine2 & chaine3 & chaine4);
+Ecrire(chaine2 & chaine3 & chaine4 & chaine1);
+Ecrire(chaine3 & chaine4 & chaine1 & chaine2);
+Ecrire(chaine4 & chaine1 & chaine2 & chaine3);
+Fin
+
+
+
+Algorithm : // défninir si un nombre est positif ou négatif
+variables : nombre : entier !=0;
+Debut : 
+nombre←saisie();
+Si (nombre > 0) alors
+Ecrire("positif");
+sinon si (nombre=0) alors 
+Ecrire("nul");
+Sinon Ecrire("negatif");
+Fin Si
+
+Algorithm : // défninir si le resultat d'un produit est positif ou négatif
+variables : nombre1, nombre2 : entier !=0;
+Début : 
+nombre1←saisie();
+nombre2←saisie();
+
+    si (nombre1<0 ou nombre2 <0) alors 
+    ecrire("negatif");
+    Si (nombre1 <0 & nombre2 <0) alors 
+    ecrire("positif");
+    sinon ecrire(positif);
+
+Fin Si
+
+Algorithm : // définir si ds mots sont dans l'ordre alphabétique
+variables :"mot 1", "mot2" : 1er CAR de "chaine"; // première lettre d l'aphabet
+Début : //utilisateur écrit 3 mots
+chaine1←saisie(); 
+chaine2←saisie();
+chaine3←saisie();
+Si ( chaine1 > premier CAR de chaine2 etchaine2 > chaine 3) alors 
+Ecrire("mot 1" & " est avant mot 2");
+Sinon  
+Ecrire("mot 1" & "est après mot 2");
+Fin si
+
+Algorithm : categorie d'un enfant
+variables : nombre : entier
+Début :
+nombre←saisie();
+Si (nombre de >=6 et nombre <=7) alors
+Ecrire("poussin");
+Sinon si (nombre >= 8 et nombre <=9) alors
+Ecrire("Pupille");
+Sinon si (nombre >=10 et nombre <=11) alors 
+Ecrire("Minime");
+Sinon si (nombre >=12) alors 
+Ecrire("Cadet");
+Fin Si
+
+
+
+/cf: correction de fautes sur discord.
+
+Algorithm : Emmet Brown
+variables : heure, minute : entier
+Début :
+heure←saisie();
+minute←saisie();
+Si (heure = 12 et minute = 59) alors
+    Ecrire("Dans une minute heure + 1" & "minute =0");
+Sinon si (heure = 12" et "minute = 0") alors
+    Ecrire("Dans une minute heure = 12" & "minute +1");
+sinon si (heure = 23" et "minute = 59") alors
+    Ecrire("Dans une minute heure = 00" & "minute = 0");
+Fin Si
+
+Algorithm : Emmet Brown
+variables : heure, minute, seconde : entier
+Début :
+heure←saisie();
+minute←saisie();
+seconde←saisie();
+sinon si (heure = 23" et "minute = 59" et "seconde = 59") alors
+    Ecrire("Dans une minute heure = 00" & "minute = 0" & seconde = 0");
+Si (heure = 12 et minute = 59 et seconde = 59) alors
+    Ecrire("Dans une minute heure + 1" & "minute =0" & seconde = 0");
+Sinon si ("minute = 0" et "seconde = 0") alors
+    Ecrire("minute +1" & seconde = +1");
+Sinon si secondes←secondes+1
+Fin Si
+
+Algorithm : calcul fourchettes de prix
+variables : prix, unités : reel; 
+Début :
+unités←saisie();
+prix←saisie();
+Si (unités >0) & (unités <=10) alors
+    Ecrire("Prix←0.10€");
+Sinon si (unités >10) & (unités <=30) alors
+    Ecrire("Prix = 0.10€ * 10 + prix = 0.09 *       unités -10 ");
+Sinon si (unités >30)  alors
+    ecrire("prix = 0.09 * 20 + prix = 0.1 * 10 + prix = 0.08 *  unités - 30");
+    Fin Si
+    
+
+    Algorithm : calcul de l'impot;
+    variables : age : entier, 
+                sexe : CAR; //Femme: Boolean;
+            
+    début:
+    age←saisie();
+    homme←saisie();
+    femme←saisie();
+    Si (homme//Si(non femme) && age > 20) alors
+        Ecrire("vous payez l'impôt");
+        Sinon si (femme && age >=18, age <=35) alors
+            Ecrire("vous payerl'impôt");
+            Sinon Ecrire("vous ne payez pas l'impôt");
+            Fin Si
+            
+
+
+Algorithm: moyenne 1 élève
+//entrer des notes et en faire la moyenne
+Variables : note, moyenne : reel;
+Début :
+    note←saisie();
+    Pour i←0 à 5 faire
+    TEST[]←saisie("Veuillez saisir la note " ");
+    TEST[]←saisie("Veuillez saisir la note " ");
+    TEST[]←saisie("Veuillez saisir la note " ");
+    TEST[]←saisie("Veuillez saisir la note " ");
+    TEST[]←saisie("Veuillez saisir la note " ");
+Fin Pour
+
+    Pour i←0 à taille(TEST) faire
+    (moyenne = $i/taille(TEST)); alors
+    Ecrire ("la moyenne est " "& moyenne");
+
+
+Correction
+Algorithm: moyenne 1 élève
+//entrer des notes et en faire la moyenne
+Variables : note, moyenne : reel;
+Début :
+    note←saisie();
+    Pour i←0 à 5 faire
+        notes []←saisie();
+       note globale←notes[i]+moyenne;
+            Fin Pour
+            moyenne←noteglobale/taille notes (6);
+            Ecrire ("la moyenne est " "& moyenne");
+                    Fin Pour
+
+Algorithm :somme, produit et moyenne d'un tableau 3 valeurs
+variables : somme, produit, moyenne, nombres : reel, TAB : tableau;
+Début :
+    nombres←saisie();
+    TAB←nombres();
+Pour i←0 à taille TAB faire
+    TAB[i]←TAB[i]+TAB[i]+TAB[i];
+    Ecrire(TAB[taille TAB]);
+    nombres←saisie();
+    TAB←nombres();
+Fin Pour
+Pour
+    somme←TAB[taille TAB];
+    Ecrire(somme);
+        produit←TAB[i]*TAB[taille TAB];
+    Ecrire(produit);
+Fin Pour 
+Pour   
+    moyenne←somme/TAB[taille TAB];
+    Ecrire(moyenne);
+Fin
+
+
+
+Algorithm : combien de fois il y a un nombre dans un tableau
+variables : nombres, [i], occurence, TAB : entier;
+Début:
+TAB←saisie();
+taille←saisie();
+nombre←saisie();
+Pour occurence←0 à taille TAB faire
+Si  
+    (TAB[i] = occurence;) alors
+    Ecrire("Il y a une occurence de " & nombre & " dans le TAB");   
+Sinon Si 
+    (TAB[i] = occurence←occurence+1;) alors
+    Ecrire("Il y a deux occurences de " & nombre & " dans le TAB");
+Fin
+    
+
+    Algorithm: calculer la somme à payer et la remise de la monnaie
+    variables: prix, quantité, valeurs: entier;
+    Début:
+    prix←saisie();
+    valeurs←saisie();
+    quantité←saisie();
+    Ecrire("La somme à payer est " & prix * quantité);
+    Ecrire("La remise est " & valeurs * quantité);
+
+
+    
